@@ -1,0 +1,556 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <!-- Responsive CSS -->
+    <link href="css/responsive.css" type="text/css" rel="stylesheet">
+
+    <!-- Font CSS -->
+    <link href="css/gogle_sans_font.css" type="text/css" rel="stylesheet">
+
+    <!--  For icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- Page Title -->
+    <title></title>
+
+    <!--
+	 Owl-carousel CSS 
+	<link href="css/owl.carousel.min.css" type="text/css" rel="stylesheet">
+-->
+
+</head>
+
+<body id="page_dashboard">
+    <!-- Header Start -->
+    <header id="header" class="animate__animated animate__fadeInDown wow" data-wow-duration=".5s">
+        <nav class="navbar align-items-center" style="flex-wrap: unset;">
+            <div class="nav-item  ml-lg-2 ml-xl-0 logo" style="min-width: fit-content;">
+                <a class="navbar-brand nav-link px-0" href="dashboard.html">
+                    <img src="images/logo.png" class="img-fluid">
+                </a>
+            </div>
+
+            <div class="nav-inner ml-5 pl-4 w-100">
+                <ul class="navbar-nav d-flex align-items-center w-100">
+                    <li class="nav-item show-only-large-devices">
+                        <a class="nav-link" href="home.html"><i class="zmdi zmdi-assignment"></i>POS</a>
+                    </li>
+                    <li class="nav-item show-only-large-devices">
+                        <a class="nav-link" href="transactions.html"><i class="zmdi zmdi-collection-text"></i>Transaction</a>
+                    </li>
+                    <li class="nav-item show-only-large-devices">
+                        <a class="nav-link" href="booking.html"><i class="zmdi zmdi-airline-seat-recline-extra"></i> Booking</a>
+                    </li>
+                    <li class="nav-item show-only-large-devices">
+                        <a class="nav-link" href="orders_status.html"><i class="zmdi zmdi-hourglass-alt"></i> Orders Status</a>
+                    </li>
+
+                    <li class="nav-item profile_img ml-auto" type="button" id="menu">
+                        <div class="dropdown">
+                            <span>
+                                <i class="zmdi zmdi-menu"></i>
+                                <i class="zmdi zmdi-close"></i>
+                            </span>
+                            <a class="img_box center_img">
+                                <img src="images/rs_1.png" class="crop_img">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="right-side-menu">
+            <div class="menu-inner">
+                <ul class="align-items-center w-100">
+                    <li class="show-medium-devices nav-item">
+                        <a class="nav-link" href="home.html"><i class="zmdi zmdi-assignment"></i>POS</a>
+                    </li>
+                    <li class="show-medium-devices">
+                        <a class="nav-link" href="transactions.html"><i class="zmdi zmdi-collection-text"></i>Transaction</a>
+                    </li>
+                    <li class="show-medium-devices">
+                        <a class="nav-link" href="booking.html"><i class="zmdi zmdi-airline-seat-recline-extra"></i> Booking</a>
+                    </li>
+                    <li class="show-medium-devices">
+                        <a class="nav-link" href="orders_status.html"><i class="zmdi zmdi-hourglass-alt"></i> Orders Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="people.html"><i class="zmdi zmdi-accounts-alt"></i> People</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="wallet.html"><i class="zmdi zmdi-balance-wallet"></i> Wallet</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="items.html"><i class="zmdi zmdi-cutlery"></i> Food Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reviews.html"><i class="zmdi zmdi-star"></i> Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="authentication.html"><i class="zmdi zmdi-shield-check"></i>Authentication</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="setting.html"><i class="zmdi zmdi-settings"></i>Settings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="support.html"><i class="zmdi zmdi-email"></i>Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="terms_conditions.html"><i class="zmdi zmdi-assignment"></i>Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><i class="zmdi zmdi-open-in-new"></i>Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+
+
+    <div class="header_spacebar"></div>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper pt-0">
+        <div class="container-fluid  align-items-start p-0">
+            <div class="page_title">
+                <div class="row align-items-center mx-0">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 p-0">
+                        <div class="title_inner d-flex">
+                            <h1 class="d-flex align-items-center">Dashboard
+                                <!--                            <span class="ml-4">$987.50</span>-->
+                            </h1>
+                            <!--                            <button type="button" class="btn"><a href="upload_item.html">Add New</a></button>-->
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 p-0 d-flex">
+                        <form class="search_box col-12 col-sm-12 col-md-12 col-lg-8 col-xl-7 p-0 px-lg-3 mt-0 mt-lg-0 pb-3 pb-md-0 ml-auto">
+                            <div class="form-group mt-3 mb-0">
+                                <div class="select_box  d-flex">
+                                    <select>
+                                        <option>This Week</option>
+                                        <option>This Month</option>
+                                        <option>Last 3 Months</option>
+                                        <option>Last 6 Months</option>
+                                        <option>Last 12 Months</option>
+                                    </select>
+                                    <i class="zmdi zmdi-caret-down"></i>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-dasboard text-white">
+                <div class="chart-area p-3 p-xl-4 animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                    <div class="row no-gutters align-items-center ">
+                        <div class="col-12 col-sm-12 col-md-8 col-lg-12 col-xl-12">
+                            <div class="menus pb-2">
+                                <ul class="d-flex list-unstyled text-muted m-0">
+                                    <li>Earnings</li>
+                                    <li class="active">Sales</li>
+                                    <li>Orders</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="graph_container d-flex">
+                        <div class="text_container">
+                            <p class="ion-text-end"><span>125</span></p>
+                            <p class="ion-text-end"><span>100</span></p>
+                            <p class="ion-text-end"><span>75</span></p>
+                            <p class="ion-text-end"><span>50</span></p>
+                            <p class="ion-text-end"><span>25</span></p>
+                            <p class="ion-text-end"><span>0</span></p>
+                        </div>
+                        <div class="graph end">
+                            <div class="bar_box">
+                                <h4>12 Jan</h4>
+
+                                <div class="bar" style="height:30%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>13 Jan</h4>
+
+                                <div class="bar" style="height:45%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>14 Jan</h4>
+
+                                <div class="bar" style="height:35%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>15 Jan</h4>
+
+                                <div class="bar" style="height:60%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>16 Jan</h4>
+
+                                <div class="bar" style="height:55%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>17 Jan</h4>
+
+                                <div class="bar" style="height:40%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box active">
+                                <h4>18 Jan</h4>
+                                <div class="bar" style="height:75%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                            <div class="bar_box">
+                                <h4>19 Jan</h4>
+
+                                <div class="bar" style="height:30%;">
+                                    <div class="icon_box">
+                                        <ion-icon class="zmdi zmdi-circle"></ion-icon>
+                                    </div>
+                                    <h5>124 item</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total_box">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                            <div class="row">
+                                <div class="col-12 col-sm-12 col-md-6 ">
+                                    <div class="chart-area py-5 py-sm-5 py-md-5 py-lg-5 px-5 d-flex align-items-center animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                        <img src="images/ic_energy.png" class="img-fluid">
+                                        <div class="text_box">
+                                            <h3>Total Orders</h3>
+                                            <h2>128</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="chart-area py-5 py-sm-5 py-md-5  py-lg-5 px-lg-3 px-xl-5 px-5  d-flex align-items-center animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                        <img src="images/ic_Serving.png" class="img-fluid">
+                                        <div class="text_box">
+                                            <h3>Revenue</h3>
+                                            <h2>$1.8k</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="chart-area py-5 py-sm-5 py-md-5 py-lg-5 px-5  d-flex align-items-center animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                        <img src="images/ic_fastfood.png" class="img-fluid">
+                                        <div class="text_box">
+                                            <h3>Items Sold</h3>
+                                            <h2>678</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-6">
+                                    <div class="chart-area py-5 py-sm-5 py-md-5 py-lg-5 px-5  d-flex align-items-center animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                        <img src="images/ic_energy.png" class="img-fluid">
+                                        <div class="text_box">
+                                            <h3>Total Orders</h3>
+                                            <h2>128</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5" style="padding: 0 20px">
+                            <div class="row chart-area doughnut_chart p-3 p-sm-3 p-md-5 px-lg-3 px-xl-4 animate__animated animate__zoomIn wow" data-wow-duration="1s">
+
+                                <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-2 py-0">
+                                    <canvas id="doughnut-chart"></canvas>
+                                </div>
+
+                                <div class="row pb-0  py-0 col-12 col-sm-12 col-md-6 col-lg-6 pl-md-5  pl-lg-3 pl-xl-5">
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color: #EB1E1E"></ion-icon>
+                                            Fast Food (26%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color: #009946"></ion-icon>
+                                            Italian (10%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#F09514"></ion-icon>
+                                            Main Course (26%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#8E37E7"></ion-icon>
+                                            Starter (9%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#F02899"></ion-icon>
+                                            Beverages (12%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#898989"></ion-icon>
+                                            Indian (16%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#33C5FF"></ion-icon>
+                                            Dessert (32%)
+                                        </h2>
+                                    </div>
+
+                                    <div class="col-12 animate__animated animate__fadeInUp wow">
+                                        <h2 class="d-flex m-0 py-2">
+                                            <ion-icon class="zmdi zmdi-circle mr-2" style="color:#3337F0"></ion-icon>
+                                            Other (6%)
+                                        </h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="total_box">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5">
+                            <div class="chart-area top-selling-items p-4 p-xl-5 animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                <h4>Top Selling items</h4>
+                                <div class="media w-100 d-flex align-items-start mb-3 animate__animated animate__fadeInUp wow">
+                                    <div class="img_box center_img">
+                                        <img src="images/1.png" class="crop_img" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="pb-1">Cream Pancake</h5>
+                                        <h6>124 times</h6>
+                                    </div>
+                                </div>
+                                <div class="media w-100 d-flex align-items-start mb-3 animate__animated animate__fadeInUp wow">
+                                    <div class="img_box center_img">
+                                        <img src="images/2.png" class="crop_img" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="pb-1">Shrips Rice</h5>
+                                        <h6>116 times</h6>
+                                    </div>
+                                </div>
+                                <div class="media w-100 d-flex align-items-start mb-3 animate__animated animate__fadeInUp wow">
+                                    <div class="img_box center_img">
+                                        <img src="images/3.png" class="crop_img" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="pb-1">Cheese Bresd</h5>
+                                        <h6>108 times</h6>
+                                    </div>
+                                </div>
+                                <div class="media w-100 d-flex align-items-start mb-3 animate__animated animate__fadeInUp wow">
+                                    <div class="img_box center_img">
+                                        <img src="images/4.png" class="crop_img" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="pb-1">Veg Chese Sandwich</h5>
+                                        <h6>99 times</h6>
+                                    </div>
+                                </div>
+                                <div class="media w-100 d-flex align-items-start mb-3 animate__animated animate__fadeInUp wow">
+                                    <div class="img_box center_img">
+                                        <img src="images/5.png" class="crop_img" alt="">
+                                    </div>
+                                    <div class="media-body">
+                                        <h5 class="pb-1">Margherita Pizza</h5>
+                                        <h6>78 times</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7">
+                            <div class="chart-area top-selling-items p-4 p-xl-5 pb-5  animate__animated animate__zoomIn wow" data-wow-duration="1s">
+                                <h4>Orders from</h4>
+                                <div class="progress-bar-box d-block d-md-flex align-items-center mb-5 animate__animated animate__fadeInUp wow" data-wow-duration="1s">
+                                    <div class="img_box pb-3">
+                                        <img src="images/ic_dine_in.png">
+                                    </div>
+                                    <div class="bar-box d-flex w-100 align-items-center">
+                                        <span class="h6 m-0">Dine-in</span>
+                                        <div class="progress" style="height: 20px;width: 100%">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 92%" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span style="min-width: 100px;" class="text-right">602 <span>(92%)</span></span>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar-box d-block d-md-flex align-items-center mb-5 animate__animated animate__fadeInUp wow" data-wow-duration="1.5s">
+                                    <div class="img_box pb-3">
+                                        <img src="images/ic_takeaway.png">
+                                    </div>
+                                    <div class="bar-box d-flex w-100 align-items-center">
+                                        <span class="h6 m-0">Takeaway</span>
+                                        <div class="progress" style="height: 20px;width: 100%">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 8%" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span style="min-width: 100px;" class="text-right">52 <span>(8%)</span></span>
+                                    </div>
+                                </div>
+
+                                <div class="progress-bar-box d-block d-md-flex align-items-center mb-5 animate__animated animate__fadeInUp wow" data-wow-duration="2s">
+                                    <div class="img_box pb-3">
+                                        <img src="images/ic_delivery.png">
+                                    </div>
+                                    <div class="bar-box d-flex w-100 align-items-center">
+                                        <span class="h6 m-0">Online</span>
+                                        <div class="progress" style="height: 20px;width: 100%">
+                                            <div class="progress-bar" role="progressbar" style="width: 5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span style="min-width: 100px;" class="text-right">3.1k <span>(5%)</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Body Wrapper End -->
+
+    <!-- Require Javascript Start -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script>
+        new Chart(document.getElementById("doughnut-chart"), {
+            type: 'doughnut',
+            legend: {
+                position: 'bottom'
+            },
+            data: {
+                labels: ["Fast Food (26%)", "Italian (10%)", "Main Course (26%)", "Starter (9%)", "Beverages (12%)", "Indian (16%)", "Dessert (32%)", "Other (6%)"],
+                datasets: [{
+                    //                    label: "Population (millions)",   
+                    backgroundColor: ["#EB1E1E", "#009946", "#F09514", "#8E37E7", "#F02899", "#898989", "#03B8FF", "#3337F0"],
+                    data: [26, 10, 26, 9, 12, 16, 32, 6],
+                    borderWidth: [0, 0, 0, 0, 0, 0, 0, 0]
+                }]
+            },
+            options: {
+                legend: {
+                    display: false,
+                    position: 'top',
+                    labels: {
+                        fontColor: "#000080",
+                    }
+                },
+                responsive: {
+                    display: true,
+                }
+
+            }
+        });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 20,
+            nav: false,
+            dot: false,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 4
+                },
+                1200: {
+                    items: 8
+                }
+            }
+        })
+    </script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $("#menu").on("click", function() {
+            $("#header").toggleClass("active");
+        });
+    </script>
+    <!-- Require Javascript End -->
+
+</body>
+
+</html>
